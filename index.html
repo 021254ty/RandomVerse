@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Генератор случайных чисел</title>
+<script>
+function generateRandomNumber() {
+var randomNumber = Math.floor(Math.random() * 100) + 1; // Генерация случайного числа от 1 до 100
+document.getElementById("randomNumber").innerHTML = randomNumber; // Вывод случайного числа в элемент с идентификатором "randomNumber"
+}
+</script>
+</head>
+<body>
+<h1>Генератор случайных чисел</h1>
+<button onclick="generateRandomNumber()">Сгенерировать число</button>
+<p>Случайное число: <span id="randomNumber"></span></p>
+</body>
+</html>
